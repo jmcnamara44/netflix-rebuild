@@ -1,3 +1,10 @@
-<p>
-  movie-list works!
-</p>
+<tr>
+  <th>Movie Title</th>
+  <th>Movie Rating</th>
+  <th>Movie Genre</th>
+</tr>
+<tr *ngFor="let currentMovie of childMovieList">
+  <td>{{currentMovie.title}}</td>
+  <td>{{currentMovie.rating}}</td>
+  <td>{{currentMovie.genre}}</td>
+</tr>
