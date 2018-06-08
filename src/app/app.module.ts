@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { Completeness.Pipe } from './completeness.pipe';
 
 import { AppComponent } from './app.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
@@ -11,7 +11,8 @@ import { SearchMovieComponent } from './search-movie/search-movie.component';
   declarations: [
     AppComponent,
     MovieListComponent,
-    SearchMovieComponent
+    SearchMovieComponent,
+    CompletenessPipe
   ],
   imports: [
     BrowserModule
