@@ -2,3 +2,8 @@
 <tr>
   <td *ngFor="let currentMovie of childMovieList"><a href="#"><img class="movie-thumbnail" src={{currentMovie.image}} alt={{currentMovie.title}}/></a></td>
 </tr>
+<ul *ngFor="let movie of childMovieList"> <!--to test the functionality of adding an array for genre. this will be hidden later on-->
+  <li>{{movie.title}}</li>
+  <li>{{movie.rating}}</li>
+  <li><span *ngFor="let type of movie.genre">{{type}}/</span></li>
+</ul>
