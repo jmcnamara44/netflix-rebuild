@@ -2,9 +2,11 @@
   <th>Movie Title</th>
   <th>Movie Rating</th>
   <th>Movie Genre</th>
+  <th>Movie Image</th>
 </tr>
 <tr *ngFor="let currentMovie of childMovieList">
   <td>{{currentMovie.title}}</td>
   <td>{{currentMovie.rating}}</td>
   <td>{{currentMovie.genre}}</td>
+  <td><img class="movie-thumbnail" src={{currentMovie.image}} alt={{currentMovie.title}}/></td>
 </tr>
