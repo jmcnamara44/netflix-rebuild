@@ -17,6 +17,7 @@ export class Completeness Pipe implements PipeTransform {
     let romanceMovies: Movie[] =  [];
 
     for (let i = 0; i< input.length; i++) {
+      if (i === input)
       for (let j = 0; j<input.genre.length; j++) {
         if (input[i].genre[j] === "Action") {
           actionMovies.push(input[i]);
@@ -33,6 +34,12 @@ export class Completeness Pipe implements PipeTransform {
         }
       }
     }
+    movieGenre.push(actionMovies);
+    movieGenre.push(thrillerMovies);
+    movieGenre.push(fantasyMovies);
+    movieGenre.push(dramaMovies);
+    movieGenre.push(comedyMovies);
+    movieGenre.push(romanceMovies);
     return movieGenre;
   }
 }
