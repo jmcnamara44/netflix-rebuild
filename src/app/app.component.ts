@@ -13,6 +13,5 @@ export class AppComponent {
     new Movie('Dumb and Dumber', 'PG-13', 'Comedy', 'http://t0.gstatic.com/images?q=tbn:ANd9GcRfKxcLRaftGDJ-q6WataYprMWOROBAhNPxuqjCUL8vaCA6ZaW1'),
     new Movie('Arrival', 'PG-13', 'Drama/Mystery', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWc_KuY4pIN3iHJFZbrkbHzbIaN0Gif2zQ44Kc60km5aiaPvx4BA'),
     new Movie('The Notebook', 'PG-13', 'Drama/Romance', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRych95HHZEw-RwvU4SHYGVrXvWtWplHpMwZJD92JF3DWkBpF6i')
-  )
   ];
 }
