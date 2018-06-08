@@ -1,3 +1,4 @@
 .movie-thumbnail {
-  height: 200px;
+  height: 400px; /*should be 200, but for testing purposes making it bigger on the page*/
+  width: 300px;
 }
