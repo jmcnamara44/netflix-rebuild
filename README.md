@@ -1,3 +1,48 @@
+# _Netflix Rebuild_
+
+#### _This webpage will build use JavaScript and Angular to rebuild the Netflix website 06/08/18_
+
+#### By _**Jimmy McNamara**_
+
+## Description
+
+_This project will use Javascript/Angular to rebuild the Netflix website so that the user is able to interact with it in a similar way.  They will be able to scroll through movie titles, movie genres, they can search for a specific title, and all movies should be listed as well._
+
+## Project Specs
+
+_A user should be able to see all of the movies Netflix has to offer._
+_A user should be able to search the Netflix database for movies._
+_Movies should be able to be filtered by genre, title, or rating._
+_Movies should be able to be sorted by genre, title, or rating._
+_The user should be able to scroll through movie thumbnails on the homgepage left to right based on a specific category of movie._
+_When a user gets to the bottom of the page a new list should dynamically appear underneath for them to search through._
+
+## Setup/Installation Requirements
+
+* _Clone repository from GitHub_
+* _In the terminal run 'npm install' to setup install the different dependencies and node modules indicated in the package.json file._
+* _Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build._
+
+## Known Bugs
+
+_No known bugs as of now._
+
+## Support and contact details
+
+_Contact Jimmy McNamara with any questions or comments_
+
+## Technologies Used
+
+_JavaScript_
+_jQuery_
+_Angular_
+
+### License
+
+*Licensed through the MIT open resource agreement*
+
+Copyright (c) 2018 **_Jimmy McNamara_**
+
 # NetflixRebuild
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
@@ -9,10 +54,6 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
 ## Running unit tests
 
