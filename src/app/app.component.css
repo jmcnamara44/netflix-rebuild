@@ -1,3 +1,9 @@
+#logo {
+  color: rgb(250, 0, 0);
+  font-family: 'Arial Narrow';
+  font-weight: bold; 
+}
+
 .bar {
     background-color: black;
 }
