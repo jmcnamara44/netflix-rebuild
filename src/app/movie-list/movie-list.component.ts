@@ -11,4 +11,7 @@ export class MovieListComponent {
   action: string = 'Action';
   romance: string = 'Romance';
   thriller: string = 'Thriller';
+  drama: string = 'Drama';
+  fantasy: string = 'Fantasy';
+  comedy: string = 'Comedy';
 }

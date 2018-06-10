@@ -32,20 +32,12 @@ export class CompletenessPipe implements PipeTransform {
         }
       }
     }
-    // console.log(type)
     output['Action'] = actionMovies;
     output['Comedy'] = comedyMovies;
     output['Thriller'] = thrillerMovies;
     output['Fantasy'] = fantasyMovies;
     output['Drama'] = dramaMovies;
     output['Romance'] = romanceMovies;
-    console.log(output['Action']);
-    console.log(comedyMovies);
-    console.log(thrillerMovies);
-    console.log(fantasyMovies);
-    console.log(dramaMovies);
-    console.log(romanceMovies);
-    console.log(output);
     return output[type];
   }
 }
