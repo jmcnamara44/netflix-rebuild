@@ -1,10 +1,10 @@
 <h3>All Movies</h3>
 <tr>
-  <td *ngFor="let currentMovie of childMovieList | completeness"><a href="#"><img class="movie-thumbnail" src={{currentMovie.image}} alt={{currentMovie.title}}/></a></td>
+  <td *ngFor="let currentMovie of childMovieList"><a href="#"><img class="movie-thumbnail" src={{currentMovie.image}} alt={{currentMovie.title}}/></a></td>
 </tr>
 
 <tr>
-  <td *ngFor="let currentMovie of childMovieList | completeness"><a href="#"><img class="movie-thumbnail" src={{currentMovie.image}} alt={{currentMovie.title}}/></a></td>
+  <td *ngFor="let currentMovie of childMovieList | completeness:thriller"><a href="#"><img class="movie-thumbnail" src={{currentMovie.image}} alt={{currentMovie.title}}/></a></td>
 </tr>
 
 <!-- additional lists below will be for each individual category, all movies falling into a particular category. I am trying to work with pipes and dictionaries to filter the data and show everything on the page at once.  Still working through the lesson and researching -->

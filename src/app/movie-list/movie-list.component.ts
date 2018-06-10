@@ -8,5 +8,7 @@ import { Movie } from '../models/movie.model';
 })
 export class MovieListComponent {
   @Input() childMovieList: Movie[];
-
+  action: string = 'Action';
+  romance: string = 'Romance';
+  thriller: string = 'Thriller';
 }
