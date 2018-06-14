@@ -13,7 +13,16 @@ import { RecentlyAddedComponent } from './recently-added/recently-added.componen
 import { MyListComponent } from './my-list/my-list.component';
 import { DvdOnlyComponent } from './dvd-only/dvd-only.component';
 import { AllListComponent } from './all-list/all-list.component';
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database'
 
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 @NgModule({
   declarations: [
@@ -32,7 +41,9 @@ import { AllListComponent } from './all-list/all-list.component';
   imports: [
     BrowserModule,
     HttpModule,
-    routing
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
