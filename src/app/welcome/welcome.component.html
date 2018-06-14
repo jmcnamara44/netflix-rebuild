@@ -1,6 +1,7 @@
 <p>home/test</p>
-<div>
+<div *ngFor="let currentGenre of genreType">
+  <h2>{{currentGenre}}</h2>
   <tr>
-    <td *ngFor="let stuff of media | completeness:action"><a href="#"><img class="media-thumbnail" src={{stuff.image}} alt={{stuff.title}}/></a></td>
+    <td *ngFor="let currentMedia of media | async | completeness:currentGenre"><a href="#"><img class="media-thumbnail" src={{currentMedia.image}} alt={{currentMedia.title}}/></a></td>
   </tr>
 </div>

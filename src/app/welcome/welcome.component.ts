@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Media } from '../models/media.model';
 import { MediaService } from '../media.service';
 import { Router } from '@angular/router';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-welcome',
@@ -11,13 +12,8 @@ import { Router } from '@angular/router';
 })
 export class WelcomeComponent implements OnInit {
 
-  media: Media[];
-  action: string = 'Action';
-  romance: string = 'Romance';
-  thriller: string = 'Thriller';
-  drama: string = 'Drama';
-  fantasy: string = 'Fantasy';
-  comedy: string = 'Comedy';
+  media: FirebaseListObservable<any[]>;
+  genreType: string[] = ['Action', 'Romance', 'Thriller', 'Drama', 'Fantasy', 'Comedy'];
   constructor(private router: Router, private mediaService: MediaService) { }
 
   ngOnInit() {
