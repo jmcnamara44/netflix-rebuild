@@ -5,3 +5,8 @@ body {
   background-repeat: no-repeat;
   background-position: center; */
 }
+.media-thumbnail {
+  height: 200px; /*should be 200, but for testing purposes making it bigger on the page*/
+  width: 300px;
+  margin: 3px;
+}

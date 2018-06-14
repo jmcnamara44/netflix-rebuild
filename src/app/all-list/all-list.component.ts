@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-all-list',
   templateUrl: './all-list.component.html',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AllListComponent implements OnInit {
 
+
+
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
