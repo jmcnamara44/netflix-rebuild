@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { CompletenessPipe } from './completeness.pipe';
+import { GenrePipe } from './genre.pipe';
+import { MediaTypePipe } from './mediaType.pipe';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { routing } from './app.routing';
@@ -29,14 +30,15 @@ export const firebaseConfig = {
     AppComponent,
     MovieListComponent,
     SearchMovieComponent,
-    CompletenessPipe,
+    GenrePipe,
     WelcomeComponent,
     TvListComponent,
     OriginalsComponent,
     RecentlyAddedComponent,
     MyListComponent,
     DvdOnlyComponent,
-    AllListComponent
+    AllListComponent,
+    MediaTypePipe
   ],
   imports: [
     BrowserModule,

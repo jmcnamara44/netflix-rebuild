@@ -6,6 +6,7 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 @Injectable()
 export class MediaService {
   media: FirebaseListObservable<any[]>;
+  
   constructor(private database: AngularFireDatabase) {
     this.media = database.list('media');
   }

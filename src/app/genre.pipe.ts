@@ -2,12 +2,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { Media } from './models/media.model';
 
 @Pipe({
-  name: "completeness",
+  name: "genre",
   pure: false
 })
 
-export class CompletenessPipe implements PipeTransform {
-  transform(input: Media[], type) {
+export class GenrePipe implements PipeTransform {
+  transform(input: Media[], genreType) {
     let output = {};
     let actionMovies: Media[] = [];
     let comedyMovies: Media[] = [];
@@ -38,6 +38,6 @@ export class CompletenessPipe implements PipeTransform {
     output['Fantasy'] = fantasyMovies;
     output['Drama'] = dramaMovies;
     output['Romance'] = romanceMovies;
-    return output[type];
+    return output[genreType];
   }
 }

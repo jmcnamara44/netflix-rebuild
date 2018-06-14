@@ -33,5 +33,19 @@
     "mediaType": "Movie",
     "runTime": 124,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRych95HHZEw-RwvU4SHYGVrXvWtWplHpMwZJD92JF3DWkBpF6i"
+  }, {
+    "title": "Arrested Developnment",
+    "rating": "TV-MA",
+    "genre": ["Comedy"],
+    "mediaType": "TV",
+    "runTime": 30,
+    "image": "https://d2e111jq13me73.cloudfront.net/sites/default/files/styles/product_image_aspect_switcher_170w/public/product-images/csm-tv/arrested-development-poster.jpg?itok=5eSFgxAO"
+    }, {
+    "title": "Breaking Bad",
+    "rating": "TV-MA",
+    "genre": ["Drama", "Thriller"],
+    "mediaType": "TV",
+    "runTime": 60,
+    "image": "https://images.amcnetworks.com/amc.com/wp-content/uploads/2010/12/breaking-bad-S5-400x600-compressedV1.jpg"
   }]
 }

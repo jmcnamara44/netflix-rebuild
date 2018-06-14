@@ -1,43 +1,7 @@
-<h3>All Movies</h3>
-<tr>
-  <td *ngFor="let currentMovie of childMovieList"><a href="#"><img class="movie-thumbnail" src={{currentMovie.image}} alt={{currentMovie.title}}/></a></td>
-</tr>
-
-<h3>Action Movies</h3>
-<tr>
-  <td *ngFor="let currentMovie of childMovieList | completeness:action"><a href="#"><img class="movie-thumbnail" src={{currentMovie.image}} alt={{currentMovie.title}}/></a></td>
-</tr>
-
-<h3>Comedys</h3>
-<tr>
-  <td *ngFor="let currentMovie of childMovieList | completeness:comedy"><a href="#"><img class="movie-thumbnail" src={{currentMovie.image}} alt={{currentMovie.title}}/></a></td>
-</tr>
-
-<h3>Thrillers</h3>
-<tr>
-  <td *ngFor="let currentMovie of childMovieList | completeness:thriller"><a href="#"><img class="movie-thumbnail" src={{currentMovie.image}} alt={{currentMovie.title}}/></a></td>
-</tr>
-
-<h3>Fantasy Movies</h3>
-<tr>
-  <td *ngFor="let currentMovie of childMovieList | completeness:fantasy"><a href="#"><img class="movie-thumbnail" src={{currentMovie.image}} alt={{currentMovie.title}}/></a></td>
-</tr>
-
-<h3>Romance Movies</h3>
-<tr>
-  <td *ngFor="let currentMovie of childMovieList | completeness:romance"><a href="#"><img class="movie-thumbnail" src={{currentMovie.image}} alt={{currentMovie.title}}/></a></td>
-</tr>
-
-<h3>Dramas</h3>
-<tr>
-  <td *ngFor="let currentMovie of childMovieList | completeness:drama"><a href="#"><img class="movie-thumbnail" src={{currentMovie.image}} alt={{currentMovie.title}}/></a></td>
-</tr>
-
-<!-- additional lists below will be for each individual category, all movies falling into a particular category. I am trying to work with pipes and dictionaries to filter the data and show everything on the page at once.  Still working through the lesson and researching -->
-
-<!-- <ul *ngFor="let movie of childMovieList">  -->
-  <!--to test the functionality of adding an array for genre. this will be hidden later on-->
-  <!-- <li>{{movie.title}}</li>
-  <li>{{movie.rating}}</li>
-  <li><span *ngFor="let type of movie.genre">{{type}}/</span></li>
-</ul> -->
+<p>movie/test</p>
+<div *ngFor="let currentGenre of genreType">
+  <h2>{{currentGenre}}</h2>
+  <tr>
+    <td *ngFor="let currentMedia of media | async | genre:currentGenre | mediaType:Movie"><a href="#"><img class="media-thumbnail" src={{currentMedia.image}} alt={{currentMedia.title}}/></a></td>
+  </tr>
+</div>
