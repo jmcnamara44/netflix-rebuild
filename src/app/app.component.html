@@ -1,5 +1,5 @@
 <nav class="navbar sticky-top navbar-expand-sm navbar-dark bar">
-  <a class="navbar-brand" id="logo" href="#">NETFLIX</a>
+  <a class="navbar-brand" id="logo" routerLink="/">NETFLIX</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -7,27 +7,29 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" routerLink="/">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">TV Shows</a>
+        <a class="nav-link" routerLink="tv-list">TV Shows</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Movies</a>
+        <a class="nav-link" routerLink="movie-list">Movies</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Originals</a>
+        <a class="nav-link" routerLink="originals">Originals</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Recently Added</a>
+        <a class="nav-link" routerLink="recently-added">Recently Added</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">My List</a>
+        <a class="nav-link" routerLink="my-list">My List</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">DVD</a>
+        <a class="nav-link" routerLink="dvd-only">DVD</a>
       </li>
     </ul>
   </div>
 </nav>
-<app-movie-list [childMovieList]="masterMovieList"></app-movie-list>
+<router-outlet></router-outlet>
+
+<!-- <app-movie-list [childMovieList]="masterMovieList"></app-movie-list> -->

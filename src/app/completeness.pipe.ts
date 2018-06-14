@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Movie } from './models/movie.model';
+import { Media } from './models/media.model';
 
 @Pipe({
   name: "completeness",
@@ -7,14 +7,14 @@ import { Movie } from './models/movie.model';
 })
 
 export class CompletenessPipe implements PipeTransform {
-  transform(input: Movie[], type) {
+  transform(input: Media[], type) {
     let output = {};
-    let actionMovies: Movie[] = [];
-    let comedyMovies: Movie[] = [];
-    let thrillerMovies: Movie[] = [];
-    let fantasyMovies: Movie[] = [];
-    let dramaMovies: Movie[] = [];
-    let romanceMovies: Movie[] = [];
+    let actionMovies: Media[] = [];
+    let comedyMovies: Media[] = [];
+    let thrillerMovies: Media[] = [];
+    let fantasyMovies: Media[] = [];
+    let dramaMovies: Media[] = [];
+    let romanceMovies: Media[] = [];
     for (let x = 0; x<input.length; x++) {
       for (let y = 0; y<input[x].genre.length; y++) {
         if (input[x].genre[y] == 'Action') {

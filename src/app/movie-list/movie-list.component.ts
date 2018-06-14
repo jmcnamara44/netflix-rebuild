@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Movie } from '../models/movie.model';
+import { Media } from '../models/media.model';
 
 @Component({
   selector: 'app-movie-list',
@@ -7,7 +7,7 @@ import { Movie } from '../models/movie.model';
   styleUrls: ['./movie-list.component.css']
 })
 export class MovieListComponent {
-  @Input() childMovieList: Movie[];
+  @Input() childMovieList: Media[];
   action: string = 'Action';
   romance: string = 'Romance';
   thriller: string = 'Thriller';
