@@ -9,35 +9,47 @@ import { Media } from './models/media.model';
 export class GenrePipe implements PipeTransform {
   transform(input: Media[], genreType) {
     let output = {};
-    let actionMovies: Media[] = [];
-    let comedyMovies: Media[] = [];
-    let thrillerMovies: Media[] = [];
-    let fantasyMovies: Media[] = [];
-    let dramaMovies: Media[] = [];
-    let romanceMovies: Media[] = [];
+    let actionMedia: Media[] = [];
+    let comedyMedia: Media[] = [];
+    let thrillerMedia: Media[] = [];
+    let fantasyMedia: Media[] = [];
+    let dramaMedia: Media[] = [];
+    let romanceMedia: Media[] = [];
+    let horrorMedia: Media[] = [];
+    let scienceFictionMedia: Media[] = [];
+    let mysteryMedia: Media[] = [];
     for (let x = 0; x<input.length; x++) {
       for (let y = 0; y<input[x].genre.length; y++) {
         if (input[x].genre[y] == 'Action') {
-          actionMovies.push(input[x]);
+          actionMedia.push(input[x]);
         } else if (input[x].genre[y] == 'Comedy') {
-          comedyMovies.push(input[x]);
+          comedyMedia.push(input[x]);
         } else if (input[x].genre[y] == 'Thriller') {
-          thrillerMovies.push(input[x]);
+          thrillerMedia.push(input[x]);
         } else if (input[x].genre[y] == 'Fantasy') {
-          fantasyMovies.push(input[x]);
+          fantasyMedia.push(input[x]);
         } else if (input[x].genre[y] == 'Drama') {
-          dramaMovies.push(input[x]);
+          dramaMedia.push(input[x]);
         } else if (input[x].genre[y] == 'Romance') {
-          romanceMovies.push(input[x]);
+          romanceMedia.push(input[x]);
+        } else if (input[x].genre[y] == 'Horror') {
+          horrorMedia.push(input[x]);
+        } else if (input[x].genre[y] == 'Science Fiction') {
+          scienceFictionMedia.push(input[x]);
+        } else if (input[x].genre[y] == 'Mystery') {
+          mysteryMedia.push(input[x]);
         }
       }
     }
-    output['Action'] = actionMovies;
-    output['Comedy'] = comedyMovies;
-    output['Thriller'] = thrillerMovies;
-    output['Fantasy'] = fantasyMovies;
-    output['Drama'] = dramaMovies;
-    output['Romance'] = romanceMovies;
+    output['Action'] = actionMedia;
+    output['Comedy'] = comedyMedia;
+    output['Thriller'] = thrillerMedia;
+    output['Fantasy'] = fantasyMedia;
+    output['Drama'] = dramaMedia;
+    output['Romance'] = romanceMedia;
+    output['Horror'] = horrorMedia;
+    output['Science Fiction'] = scienceFictionMedia;
+    output['Mystery'] = mysteryMedia;
     return output[genreType];
   }
 }

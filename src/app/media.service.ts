@@ -6,7 +6,7 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 @Injectable()
 export class MediaService {
   media: FirebaseListObservable<any[]>;
-  genreType: string[] = ['Action', 'Romance', 'Thriller', 'Drama', 'Fantasy', 'Comedy'];
+  genreType: string[] = ['Action', 'Romance', 'Thriller', 'Drama', 'Fantasy', 'Comedy', 'Horror', 'Science Fiction', 'Mystery'];
 
   constructor(private database: AngularFireDatabase) {
     this.media = database.list('media');
