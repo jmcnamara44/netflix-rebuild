@@ -29,3 +29,16 @@ body {
   position: absolute;
   bottom: 8px;
 }
+.footer {
+  margin-top: 80px;
+  margin-left: 120px;
+  margin-right: 100px;
+}
+.footer-list {
+  color: grey;
+  list-style-type: none;
+}
+.footer-list p {
+  float: left;
+  padding-right: 75px
+}
