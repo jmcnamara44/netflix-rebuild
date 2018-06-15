@@ -3,7 +3,6 @@ import { Media } from '../models/media.model';
 import { MediaService } from '../media.service';
 import { Router } from '@angular/router';
 import { FirebaseListObservable } from 'angularfire2/database';
-import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-welcome',

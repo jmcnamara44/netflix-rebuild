@@ -1,3 +1,7 @@
-<p>
-  tv-list works!
-</p>
+<p>tv/test</p>
+<div *ngFor="let currentGenre of genreType">
+  <h2>{{currentGenre}}</h2>
+  <tr>
+    <td *ngFor="let currentMedia of media | async | genre:currentGenre | mediaType:tv"><a href="#"><img class="media-thumbnail" src={{currentMedia.image}} alt={{currentMedia.title}}/></a></td>
+  </tr>
+</div>
