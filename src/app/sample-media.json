@@ -4,6 +4,7 @@
     "genre": ["Action", "Thriller"],
     "mediaType": "Movie",
     "runTime": 133,
+    "description": "V wants revenge",
     "image": "https://is4-ssl.mzstatic.com/image/thumb/Video20/v4/05/41/f0/0541f062-5839-22f5-b58f-32bb244fb755/source/1200x630bb.jpg"
     }, {
     "title": "Lord of the Rings: The Fellowship of the Ring",
@@ -11,6 +12,7 @@
     "genre": ["Fantasy", "Action"],
     "mediaType": "Movie",
     "runTime": 230,
+    "description": "A group of unlikely friends go on a road trip",
     "image": "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_UX182_CR0,0,182,268_AL_.jpg"
     }, {
     "title": "Dumb and Dumber",
@@ -18,6 +20,7 @@
     "genre": ["Comedy"],
     "mediaType": "Movie",
     "runTime": 113,
+    "description": "A duo of dunces go on a trip to return lost luggage",
     "image": "http://t0.gstatic.com/images?q=tbn:ANd9GcRfKxcLRaftGDJ-q6WataYprMWOROBAhNPxuqjCUL8vaCA6ZaW1"
     }, {
     "title": "Arrival",
@@ -25,6 +28,7 @@
     "genre": ["Drama", "Mystery"],
     "mediaType": "Movie",
     "runTime": 118,
+    "description": "Who are they?",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWc_KuY4pIN3iHJFZbrkbHzbIaN0Gif2zQ44Kc60km5aiaPvx4BA"
     }, {
     "title": "The Notebook",
@@ -32,6 +36,7 @@
     "genre": ["Drama", "Romance"],
     "mediaType": "Movie",
     "runTime": 124,
+    "description": "Possibly about a real notebook?",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRych95HHZEw-RwvU4SHYGVrXvWtWplHpMwZJD92JF3DWkBpF6i"
   }, {
     "title": "Arrested Developnment",
@@ -39,6 +44,7 @@
     "genre": ["Comedy"],
     "mediaType": "TV",
     "runTime": 30,
+    "description": "A dim-witted family tries to stay afloat",
     "image": "https://d2e111jq13me73.cloudfront.net/sites/default/files/styles/product_image_aspect_switcher_170w/public/product-images/csm-tv/arrested-development-poster.jpg?itok=5eSFgxAO"
     }, {
     "title": "Breaking Bad",
@@ -46,6 +52,7 @@
     "genre": ["Drama", "Thriller"],
     "mediaType": "TV",
     "runTime": 60,
+    "description": "A man tries to pay for medical bills any way he can",
     "image": "https://images.amcnetworks.com/amc.com/wp-content/uploads/2010/12/breaking-bad-S5-400x600-compressedV1.jpg"
   }]
 }
