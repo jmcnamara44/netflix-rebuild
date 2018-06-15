@@ -1,15 +1,12 @@
 body {
   background-color: black;
-  color: white;
-  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaDSHB41VZydCB8iwX8JomlfQ2DOGn4X6BCKq_LoBWzA8ADiWuJg");
-  background-repeat: no-repeat;
-  background-position: center; */
+  color: white;  /* this isn't updating the navbar for some reason */
 }
 .contain {
   position: relative;
 }
 .media-thumbnail {
-  height: 200px; /*should be 200, but for testing purposes making it bigger on the page*/
+  height: 200px;
   width: 300px;
   margin: 3px;
 }

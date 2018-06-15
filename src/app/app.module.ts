@@ -13,7 +13,6 @@ import { OriginalsComponent } from './originals/originals.component';
 import { RecentlyAddedComponent } from './recently-added/recently-added.component';
 import { MyListComponent } from './my-list/my-list.component';
 import { DvdOnlyComponent } from './dvd-only/dvd-only.component';
-import { AllListComponent } from './all-list/all-list.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database'
@@ -37,7 +36,6 @@ export const firebaseConfig = {
     RecentlyAddedComponent,
     MyListComponent,
     DvdOnlyComponent,
-    AllListComponent,
     MediaTypePipe
   ],
   imports: [

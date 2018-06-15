@@ -8,16 +8,11 @@ import { OriginalsComponent } from './originals/originals.component';
 import { RecentlyAddedComponent } from './recently-added/recently-added.component';
 import { MyListComponent } from './my-list/my-list.component';
 import { DvdOnlyComponent } from './dvd-only/dvd-only.component';
-import { AllListComponent } from './all-list/all-list.component';
 
 const appRoutes: Routes = [
   {
     path: '',
     component: WelcomeComponent
-  },
-  {
-    path: 'all-list',
-    component: AllListComponent
   },
   {
     path: 'dvd-only',
