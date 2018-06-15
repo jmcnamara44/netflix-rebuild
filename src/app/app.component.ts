@@ -7,5 +7,4 @@ import { Media } from './models/media.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  genreType: string[] = ['Action', 'Romance', 'Thriller', 'Drama', 'Fantasy', 'Comedy'];
 }

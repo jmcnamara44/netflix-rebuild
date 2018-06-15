@@ -14,11 +14,12 @@ import { AppComponent } from '../app.component';
 export class WelcomeComponent implements OnInit {
 
   media: FirebaseListObservable<any[]>;
-  // genreList = MediaService.genreType;
+  genreType;
   constructor(private router: Router, private mediaService: MediaService) { }
 
   ngOnInit() {
     this.media = this.mediaService.getMedia();
+    this.genreType = this.mediaService.getGenres();
   }
 
 }

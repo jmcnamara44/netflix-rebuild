@@ -8,10 +8,10 @@ import { Media } from '../models/media.model';
 })
 export class MovieListComponent {
   @Input() childMovieList: Media[];
-  action: string = 'Action';
-  romance: string = 'Romance';
-  thriller: string = 'Thriller';
-  drama: string = 'Drama';
-  fantasy: string = 'Fantasy';
-  comedy: string = 'Comedy';
+  // action: string = 'Action';
+  // romance: string = 'Romance';
+  // thriller: string = 'Thriller';
+  // drama: string = 'Drama';
+  // fantasy: string = 'Fantasy';
+  // comedy: string = 'Comedy';
 }
