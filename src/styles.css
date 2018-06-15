@@ -17,16 +17,15 @@ body {
   height: 250px;
   width: 350px;
 }
-.description {
+.media-hidden {
   display: none;
   color: white;
   font-family: sans-serif;
+  list-style-type: none;
 }
-.media-thumbnail:hover + .description {
+.media-thumbnail:hover + .media-hidden {
   display: block;
-  text-align: center;
+  text-align: left;
   position: absolute;
   bottom: 8px;
-  left: 8px;
-  right: 8px;
 }
