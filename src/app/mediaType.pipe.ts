@@ -19,7 +19,7 @@ export class MediaTypePipe implements PipeTransform {
         tv.push(input[x]);
       }
     }
-    output['Movies'] = movies;
+    output['Movie'] = movies;
     output['TV'] = tv;
     return output[mediumType];
   }
