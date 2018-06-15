@@ -34,11 +34,10 @@ body {
   margin-left: 120px;
   margin-right: 100px;
 }
-.footer-list {
+.footer {
   color: grey;
-  list-style-type: none;
+  font-size: 13px;
 }
-.footer-list p {
-  float: left;
-  padding-right: 75px
+.row p {
+  width: 250px;
 }
