@@ -2,6 +2,6 @@
 <div *ngFor="let currentGenre of genreType">
   <h2>{{currentGenre}}</h2>
   <tr>
-    <td *ngFor="let currentMedia of media | async | genre:currentGenre | mediaType:tv"><a href="#"><img class="media-thumbnail" src={{currentMedia.image}} alt={{currentMedia.title}}/></a></td>
+    <td *ngFor="let currentMedia of media | async | genre:currentGenre | mediaType:tv" class="contain"><a href="#"><img class="media-thumbnail" src={{currentMedia.image}} alt={{currentMedia.title}}/><span class="description">{{currentMedia.description}}</span></a></td>
   </tr>
 </div>
