@@ -19,12 +19,24 @@ _Users should be able to see some brief info on what they want to watch when hov
 
 _A user should be able to search the Netflix database for movies._
 _New titles will appear as the user scrolls down the page._
+_User can save titles to their list of videos to watch._
+_User has a drop-down window when they hover over the bell with notifications._
+_User can see profile information when they hover of the app face icon._
 
 ## Setup/Installation Requirements
 
 * _Clone repository from GitHub_
 * _In the terminal run 'npm install' to setup install the different dependencies and node modules indicated in the package.json file._
-* _Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build._
+* _Create a file titled 'api-keys.ts' in the directory src/app.  You will need the store the following data:
+  export var masterFirebaseConfig = {
+      apiKey: "xxx",
+      authDomain: "xxx",
+      databaseURL: "xxx",
+      projectId: "xxx",
+      storageBucket: "xxx",
+      messagingSenderId: "xxx"
+  };
+  The 'xxx' is a placeholder for information you will need to input into your api-keys.ts file._
 
 ## Known Bugs
 
