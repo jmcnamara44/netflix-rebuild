@@ -19,10 +19,10 @@
         <a class="nav-link" routerLink="originals">Originals</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="recently-added">Recently Added</a>
+        <a class="nav-link">Recently Added</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="my-list">My List</a>
+        <a class="nav-link">My List</a>
       </li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
@@ -30,7 +30,7 @@
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       </form>
       <li class="nav-item">
-        <a class="nav-link" routerLink="dvd-only">DVD</a>
+        <a class="nav-link">DVD</a>
       </li>
       <li class="nav-item">
         <a><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcj3iS24SCJNKF85l4OPnuvflgu_oeE8oftO5Jg-_SnneNJp-O" alt="bell" class="nav-link navbar-icon" routerLink="notifications"></a>
@@ -41,8 +41,9 @@
     </ul>
   </div>
 </nav>
-
-<router-outlet></router-outlet>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
 
 <footer class="footer">
   <div class="container">

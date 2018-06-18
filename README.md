@@ -11,11 +11,14 @@ _This project will use Javascript/Angular to rebuild the Netflix website so that
 ## Project Specs
 
 _A user should be able to see all of the movies Netflix has to offer._
-_A user should be able to search the Netflix database for movies._
-_Movies should be able to be filtered by genre, title, or rating._
-_Movies should be able to be sorted by genre, title, or rating._
+_Movies should be able to be sorted and filtered by genre, title, or rating._
 _The user should be able to scroll through movie thumbnails on the homgepage left to right based on a specific category of movie._
-_When a user gets to the bottom of the page a new list should dynamically appear underneath for them to search through._
+_Users should be able to see some brief info on what they want to watch when hovering over the title._
+
+## Future Project Specs
+
+_A user should be able to search the Netflix database for movies._
+_New titles will appear as the user scrolls down the page._
 
 ## Setup/Installation Requirements
 
