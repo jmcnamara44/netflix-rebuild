@@ -5,6 +5,10 @@ body {
 .contain {
   position: relative;
 }
+.navbar-icon {
+  height: 60px;
+  width: 60px;
+}
 .media-thumbnail {
   height: 200px;
   width: 300px;
