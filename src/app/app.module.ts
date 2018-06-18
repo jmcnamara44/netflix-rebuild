@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { GenrePipe } from './genre.pipe';
 import { MediaTypePipe } from './mediaType.pipe';
+import { NetflixOriginalPipe } from './netflixOriginal.pipe';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { routing } from './app.routing';
@@ -36,7 +37,8 @@ export const firebaseConfig = {
     RecentlyAddedComponent,
     MyListComponent,
     DvdOnlyComponent,
-    MediaTypePipe
+    MediaTypePipe,
+    NetflixOriginalPipe
   ],
   imports: [
     BrowserModule,
